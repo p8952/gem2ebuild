@@ -1,4 +1,4 @@
-require "gem2ebuild/version"
+require 'gem2ebuild/version'
 
 module Gem2ebuild
 

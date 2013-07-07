@@ -1,0 +1,6 @@
+#!/usr/bin/env ruby
+
+require 'gem2ebuild'
+
+gem2ebuild = Gem2ebuild.new(ARGV)
+gem2ebuild.run

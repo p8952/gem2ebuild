@@ -1,13 +1,17 @@
 require "gem2ebuild/version"
 
-class Gem2ebuild
+module Gem2ebuild
 
-  def initialize(arguments)
-    @arguments = arguments
-  end
+  class CLI
 
-  def run
-    puts @arguments
+    def initialize(arguments)
+      @arguments = arguments
+    end
+
+    def run
+      puts @arguments
+    end
+
   end
 
 end

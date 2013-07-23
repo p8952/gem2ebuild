@@ -8,9 +8,10 @@ Gem::Specification.new do |gem|
   gem.version       = Gem2ebuild::VERSION
   gem.authors       = ['Peter Wilmott']
   gem.email         = ['p@p8952.info']
-  gem.description   = %q{Write a gem description}
-  gem.summary       = %q{Write a gem summary}
-  gem.homepage      = ''
+  gem.description   = 'description'
+  gem.summary       = 'summary'
+  gem.homepage      = 'https://github.com/p8952/gem2ebuild'
+  gem.license       = 'GPL-3'
 
   gem.files         = `git ls-files`.split($/)
   gem.executables   = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }
@@ -18,4 +19,5 @@ Gem::Specification.new do |gem|
   gem.require_paths = ['lib']
 
   gem.add_dependency('gems')
+  gem.add_dependency('rspec')
 end

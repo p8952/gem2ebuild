@@ -1,24 +1,11 @@
-# Gem2ebuild
-
-TODO: Write a gem description
+# Gem2Ebuild
+ToDo
 
 ## Installation
-
-Add this line to your application's Gemfile:
-
-    gem 'gem2ebuild'
-
-And then execute:
-
-    $ bundle
-
-Or install it yourself as:
-
-    $ gem install gem2ebuild
+ToDo
 
 ## Usage
-
-TODO: Write usage instructions here
+ToDo
 
 ## Contributing
 

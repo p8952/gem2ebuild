@@ -69,6 +69,7 @@ class Gem2Ebuild
     Gems.info(@arg_name).each do |key, value|
       ebuild_hash[:DESCRIPTION] = value if key == 'info'
       ebuild_hash[:HOMEPAGE] = value if key == 'homepage_uri'
+      ebuild_hash[:LICENSE] = value.join(' ') if key == 'licenses'
     end
     Gems.dependencies([ebuild_hash[:NAME]]).each do |version|
       ebuild_hash[:DEPEND] = version[:dependencies] if version[:number] == ebuild_hash[:VERSION] and version[:platform] == 'ruby'
@@ -90,7 +91,7 @@ class Gem2Ebuild
       DESCRIPTION="#{hash[:DESCRIPTION]}"
       HOMEPAGE="#{hash[:HOMEPAGE]}"
 
-      LICENSE=""
+      LICENSE="#{hash[:LICENSE]}"
       SLOT="0"
       KEYWORDS="~amd64 ~x86"
       IUSE=""
